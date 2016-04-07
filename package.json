@@ -1,0 +1,22 @@
+{
+  "name": "ocularis-counter-provider",
+  "version": "1.0.0",
+  "description": "Example provider for testing and messing around with ocularis provider concept.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cverna-hackathons/ocularis-counter-provider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cverna-hackathons/ocularis-counter-provider/issues"
+  },
+  "homepage": "https://github.com/cverna-hackathons/ocularis-counter-provider#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}

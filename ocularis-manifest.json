@@ -1,0 +1,93 @@
+{
+  "name": "ocularis-counter-provider",
+  "url": "git@github.com:cverna-hackathons/ocularis-counter-provider.git",
+  "description": "Basic example of ocularis provider as counter",
+  "version": "0.0.1",
+  "initializeData": [
+    {
+      "attrName": "intInitVal",
+      "name": "Initial value of int counter",
+      "description": "Initial value of counter",
+      "dataType": "integer"
+    },
+    {
+      "attrName": "alphaInitVal",
+      "name": "Initial value of alpha counter",
+      "description": "",
+      "dataType": "char"
+    }
+  ],
+  "globalEvents": [
+    {
+      "funcName": "switchEvent",
+      "name": "Switch counter types",
+      "description": "Switch counter types between integer and alphabet"
+    }
+  ],
+  "dataSets":[
+    {
+      "attrName": "integerCounter",
+      "name": "Integer counter",
+      "description": "Basic integer counter",
+      "dataFields": [
+        {
+          "attrName": "actual",
+          "name": "Actual value",
+          "type": "integer"
+        }
+      ],
+      "events": [
+        {
+          "funcName": "increment",
+          "name": "Increment",
+          "description": "Increment actual value of counter"
+        },
+        {
+          "funcName": "decrement",
+          "name": "Decrement",
+          "description": "Decrement actual value of counter"
+        },
+        {
+          "funcName": "reset",
+          "name": "Reset",
+          "description": "Reset actual value to the initial value"
+        }
+      ]
+    },
+    {
+      "attrName": "alphaCounter",
+      "name": "Alphabet counter",
+      "description": "Basic alphabet sequence counter",
+      "dataFields": [
+        {
+          "attrName": "actual",
+          "name": "Actual value",
+          "type": "char"
+        }
+      ],
+      "events": [
+        {
+          "funcName": "increment",
+          "name": "Increment",
+          "description": ""
+        },
+        {
+          "funcName": "decrement",
+          "name": "Decrement",
+          "description": ""
+        },
+        {
+          "funcName": "toUpper",
+          "name": "To upper case",
+          "description": ""
+        },
+        {
+          "funcName": "toLower",
+          "name": "To lower case",
+          "description": ""
+        }
+      ]
+    }
+
+  ]
+}
